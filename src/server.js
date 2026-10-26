@@ -82,4 +82,5 @@ const server = http.createServer(async (req, res) => {
   return json(res, 404, { error: 'Not found' });
 });
 
-server.listen(process.env.PORT || 3000, () => console.log('Review UI: http://localhost:3000'));
+const port = Number(process.env.PORT || 3000);
+server.listen(port, '0.0.0.0', () => console.log(`Review UI listening on ${port}`));
