@@ -8,4 +8,4 @@ Kokoro supplies local speech. FFmpeg generates the original procedural ambient b
 
 The composition has a shared frame, six-plus scene types, deterministic GSAP timing and no network calls while rendering. HyperFrames visual checks pass runtime, frame-bound, layout and motion validation for all generated formats. It warns that the scene elements are not split into sub-composition files; this is a deliberate small-project simplification, not a runtime failure. Splitting them is the first renderer refactor I would make for a larger scene library.
 
-Three supplied data files exceed the specified source-field limits. They are reported as `needs-human` rather than silently shortened. Docker assets remain in the repository for the requested deployment shape; the intended submission deployment is Railway.
+Three supplied data files exceed the specified source-field limits. They are reported as `needs-human` rather than silently shortened. Docker Compose is the reproducible submission deployment: it runs web and worker processes from the same image with named volumes for the local queue and artifacts.

@@ -13,7 +13,27 @@ A local, keyless landing-page-to-video pipeline for the Miracly take-home. It tu
 - Review UI at `http://localhost:3000`, with side-by-side 16:9 and 9:16 review
 - Approval-only local publishing with embed HTML, VideoObject JSON-LD and sitemap
 
-## Setup
+## Docker quick start (recommended for reviewers)
+
+Requirements: Docker Desktop 4+ with its engine running and at least 10 GB of free disk space. No Node, Python, FFmpeg, Chrome, API keys, or local model installation is required on the reviewer’s machine.
+
+```sh
+git clone https://github.com/mansmahamat/miracly-test.git
+cd miracly-test
+docker compose up --build
+```
+
+Open `http://localhost:3000`. Keep the terminal running; stop the stack with `Ctrl+C`. The first image build downloads the local voice and transcription dependencies, so it can take several minutes.
+
+In another terminal, submit a sample job:
+
+```sh
+curl -X POST http://localhost:3000/jobs \
+  -H 'content-type: application/json' \
+  --data-binary @data/confetti-kol-marketing-agency-services-singapore.json
+```
+
+## Native setup
 
 Requirements: Node 22+, Google Chrome, FFmpeg and Python 3.12 for local Whisper/Kokoro.
 
@@ -68,7 +88,7 @@ output/<slug>/9x16.vtt
 
 `output/batch-report.json` records all pages, including rejected source data and its reason. An approved page is published to `public/<slug>/` with `embed.html`, `poster.jpg`, `video.jsonld`, captions and a shared `public/video-sitemap.xml`.
 
-## Deployment
+## Deployment notes
 
 `Dockerfile` and `compose.yml` provide the web and worker processes from the same image. The image includes Chromium, FFmpeg, Kokoro and faster-whisper. With Docker Desktop installed, start both services with:
 
@@ -76,7 +96,7 @@ output/<slug>/9x16.vtt
 docker compose up --build
 ```
 
-The named volumes keep the local file-backed job queue, review records, output and published artifacts shared between web and worker. For Railway, the production topology is a `web` service, a `worker` service, Railway Postgres for the queue/review records, and an S3-compatible Railway bucket for rendered artifacts. The checked-in file adapter remains the keyless local/Docker mode; wire those managed adapters before enabling the two independent Railway services.
+The named volumes keep the local file-backed job queue, review records, output and published artifacts shared between web and worker. The Docker Compose path above is the complete, reproducible submission deployment. A production cloud split would use Postgres for queue/review records and object storage for rendered artifacts.
 
 This take-home remains intentionally file-backed so it runs locally without accounts or secrets. Architecture and trade-offs are in [ARCHITECTURE.md](ARCHITECTURE.md) and [DECISIONS.md](DECISIONS.md).
 
