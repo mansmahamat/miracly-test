@@ -76,7 +76,7 @@ output/<slug>/9x16.vtt
 docker compose up --build
 ```
 
-The named volumes keep the local file-backed job queue, review records, output and published artifacts shared between web and worker. For Railway, deploy the same repository as two services: `npm run dev` for web and `npm run worker` for the worker. Persist `jobs/`, `output/` and `public/` with a volume or replace the local-file adapters with managed storage before production.
+The named volumes keep the local file-backed job queue, review records, output and published artifacts shared between web and worker. For Railway, the production topology is a `web` service, a `worker` service, Railway Postgres for the queue/review records, and an S3-compatible Railway bucket for rendered artifacts. The checked-in file adapter remains the keyless local/Docker mode; wire those managed adapters before enabling the two independent Railway services.
 
 This take-home remains intentionally file-backed so it runs locally without accounts or secrets. Architecture and trade-offs are in [ARCHITECTURE.md](ARCHITECTURE.md) and [DECISIONS.md](DECISIONS.md).
 
