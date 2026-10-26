@@ -6,6 +6,7 @@ import { publishApproved } from './lib/publish.js';
 import { decideReview, listReviews } from './lib/reviews.js';
 import { reviewPage } from './review-ui.js';
 import { jobStore } from './lib/job-store.js';
+import { cloudArtifacts, readArtifact } from './lib/artifacts.js';
 
 const root = resolve('.');
 const jobs = jobStore(root);
@@ -30,7 +31,7 @@ const server = http.createServer(async (req, res) => {
     try {
       const mime = { '.mp4': 'video/mp4', '.vtt': 'text/vtt', '.json': 'application/json' }[extname(path)] || 'application/octet-stream';
       res.writeHead(200, { 'content-type': mime });
-      return res.end(await readFile(path));
+      return res.end(cloudArtifacts ? await readArtifact(decodeURIComponent(url.pathname).replace(/^\/output\//, '')) : await readFile(path));
     } catch { return json(res, 404, { error: 'File not found' }); }
   }
 

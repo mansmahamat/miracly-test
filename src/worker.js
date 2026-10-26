@@ -3,6 +3,7 @@ import { join, resolve } from 'node:path';
 import { createLocalVoice, muxVoice } from './lib/audio.js';
 import { renderPage } from './lib/render.js';
 import { jobStore } from './lib/job-store.js';
+import { uploadRender } from './lib/artifacts.js';
 
 const root = resolve('.');
 const jobs = jobStore(root);
@@ -36,6 +37,7 @@ async function tick() {
     if (!job) break;
     try {
       job.result = await renderJob(job);
+      if (job.result.status === 'draft') await uploadRender(root, slugFor(job.page));
       job.status = job.result.status === 'draft' ? 'review' : 'needs-human';
     } catch (error) {
       job.status = 'needs-human';
