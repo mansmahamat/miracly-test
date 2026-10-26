@@ -96,7 +96,7 @@ output/<slug>/9x16.vtt
 docker compose up --build
 ```
 
-The named volumes keep the local file-backed job queue, review records, output and published artifacts shared between web and worker. The Docker Compose path above is the complete, reproducible submission deployment. A production cloud split would use Postgres for queue/review records and object storage for rendered artifacts.
+The named volumes keep the local file-backed job queue, review records, output and published artifacts shared between web and worker. The Docker Compose path above is the complete, reproducible submission deployment.
 
 This take-home remains intentionally file-backed so it runs locally without accounts or secrets. Architecture and trade-offs are in [ARCHITECTURE.md](ARCHITECTURE.md) and [DECISIONS.md](DECISIONS.md).
 

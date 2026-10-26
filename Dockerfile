@@ -24,6 +24,4 @@ ENV NODE_ENV=production \
     HYPERFRAMES_PYTHON=/opt/video-venv/bin/python
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
-# Railway starts the same image as either a web server or a render worker.
-# Docker Compose may still override this command explicitly.
-CMD ["sh", "-c", "if [ \"$SERVICE_ROLE\" = \"worker\" ]; then npm run worker; else npm run dev; fi"]
+CMD ["npm", "run", "dev"]

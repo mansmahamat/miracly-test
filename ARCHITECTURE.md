@@ -2,7 +2,7 @@
 
 ## Goal
 
-This is a deliberately small, file-backed video kit. It turns one landing-page JSON file into two branded, reviewable MP4s without API keys. The same code runs locally, in Docker, or as separate web and worker services on Railway.
+This is a deliberately small, file-backed video kit. It turns one landing-page JSON file into two branded, reviewable MP4s without API keys. The same code runs locally or in Docker.
 
 ```text
 data/<page>.json
