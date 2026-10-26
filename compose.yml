@@ -1,0 +1,28 @@
+services:
+  web:
+    build: .
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+    volumes:
+      - jobs:/app/jobs
+      - output:/app/output
+      - reviews:/app/reviews
+      - public:/app/public
+
+  worker:
+    build: .
+    command: npm run worker
+    volumes:
+      - jobs:/app/jobs
+      - output:/app/output
+      - reviews:/app/reviews
+      - public:/app/public
+
+volumes:
+  jobs:
+  output:
+  reviews:
+  public:

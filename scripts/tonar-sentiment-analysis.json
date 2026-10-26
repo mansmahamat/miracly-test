@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "sceneLibrary": [
+    "kinetic-headline",
+    "checklist",
+    "numbered-steps",
+    "phone-mockup",
+    "ticker",
+    "big-statement",
+    "end-card"
+  ],
+  "scenes": [
+    {
+      "type": "kinetic-headline",
+      "label": "Sentiment analysis",
+      "line": "See sentiment analysis that reads tone,…",
+      "accentWord": "words"
+    },
+    {
+      "type": "big-statement",
+      "label": "Nordics",
+      "line": "Stop defending sentiment scores based o…"
+    },
+    {
+      "type": "checklist",
+      "label": "Built around outcomes",
+      "line": "Defend reports with primary evidence",
+      "items": [
+        "Defend reports with primary evidence",
+        "Fewer false positives and missed threats"
+      ]
+    },
+    {
+      "type": "phone-mockup",
+      "label": "Built for your team",
+      "line": "Stop defending sentiment scores based o…"
+    },
+    {
+      "type": "ticker",
+      "label": "Built with experience",
+      "line": "Signals worth tracking",
+      "items": [
+        "Proprietary AI models achieve a 3% word error rate on Nordic languages and dialects.",
+        "Sentiment is scored at the entity level.",
+        "Every mention links to the original audio."
+      ]
+    },
+    {
+      "type": "end-card",
+      "label": "Ready when you are",
+      "line": "Book a demo",
+      "cta": "Book a demo"
+    }
+  ],
+  "voiceover": "See sentiment analysis that reads tone, not just words. Stop defending sentiment scores based on word lists. Tonar reads tone and context so your reports hold up in the boardroom. Defend reports with primary evidence. Fewer false positives and missed threats. . Book a demo.",
+  "captions": "See sentiment analysis that reads tone, not just words. Stop defending sentiment scores based on word lists. Tonar reads tone and context so your reports hold up in the boardroom. Defend reports with primary evidence. Fewer false positives and missed threats. . Book a demo.",
+  "claims": []
+}

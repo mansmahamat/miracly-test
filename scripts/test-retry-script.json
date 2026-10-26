@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "sceneLibrary": [
+    "kinetic-headline",
+    "checklist",
+    "numbered-steps",
+    "phone-mockup",
+    "ticker",
+    "big-statement",
+    "end-card"
+  ],
+  "scenes": [
+    {
+      "type": "kinetic-headline",
+      "label": "KOL marketing",
+      "line": "Find the KOLs who actually move your pr…",
+      "accentWord": "product"
+    },
+    {
+      "type": "big-statement",
+      "label": "Singapore",
+      "line": "Confetti connects Singapore brands with…"
+    },
+    {
+      "type": "checklist",
+      "label": "Built around outcomes",
+      "line": "Official platform partnerships, not gue…",
+      "items": [
+        "Official platform partnerships, not guesswork",
+        "Conversion-first creator selection"
+      ]
+    },
+    {
+      "type": "numbered-steps",
+      "label": "How it works",
+      "line": "A clear path from brief to outcome",
+      "items": [
+        "Define your campaign goal and platform",
+        "Select KOLs by conversion fit, not just reach"
+      ]
+    },
+    {
+      "type": "ticker",
+      "label": "Built with experience",
+      "line": "Names you may know",
+      "items": [
+        "Owala",
+        "Nippon Paint",
+        "Bata",
+        "EHP Labs"
+      ]
+    },
+    {
+      "type": "end-card",
+      "label": "Ready when you are",
+      "line": "Talk to a KOL strategist",
+      "cta": "Talk to a KOL strategist"
+    }
+  ],
+  "voiceover": "Find the KOLs who actually move your product. Confetti connects Singapore brands with the right Key Opinion Leaders to drive real conversions on TikTok Shop, Shopee, and Lazada. Official platform partnerships, not guesswork. Conversion-first creator selection. Define your campaign goal and platform. Select KOLs by conversion fit, not just reach. Talk to a KOL strategist.",
+  "captions": "Find the KOLs who actually move your product. Confetti connects Singapore brands with the right Key Opinion Leaders to drive real conversions on TikTok Shop, Shopee, and Lazada. Official platform partnerships, not guesswork. Conversion-first creator selection. Define your campaign goal and platform. Select KOLs by conversion fit, not just reach. Talk to a KOL strategist.",
+  "claims": []
+}

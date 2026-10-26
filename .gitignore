@@ -1,0 +1,16 @@
+# Local tooling and operating-system files
+.DS_Store
+node_modules/
+.venv/
+
+# Generated runtime data and media (recreate with the documented commands)
+jobs/
+reviews/
+output/
+public/
+
+# Environment-specific secrets
+.env
+.env.*
+!.env.example
+

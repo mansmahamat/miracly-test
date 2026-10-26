@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "sceneLibrary": [
+    "kinetic-headline",
+    "checklist",
+    "numbered-steps",
+    "phone-mockup",
+    "ticker",
+    "big-statement",
+    "end-card"
+  ],
+  "scenes": [
+    {
+      "type": "kinetic-headline",
+      "label": "Shopee livestream commerce",
+      "line": "Turn your Shopee Live channel into a co…",
+      "accentWord": "engine"
+    },
+    {
+      "type": "big-statement",
+      "label": "Singapore",
+      "line": "Confetti runs the full operation behind…"
+    },
+    {
+      "type": "checklist",
+      "label": "Built around outcomes",
+      "line": "Full production, nothing left to you",
+      "items": [
+        "Full production, nothing left to you",
+        "Official Shopee MCN platform access"
+      ]
+    },
+    {
+      "type": "numbered-steps",
+      "label": "How it works",
+      "line": "A clear path from brief to outcome",
+      "items": [
+        "Brief and campaign strategy",
+        "Script and run sheet development"
+      ]
+    },
+    {
+      "type": "ticker",
+      "label": "Built with experience",
+      "line": "Signals worth tracking",
+      "items": [
+        "Singapore's Shopee market is one of the most active in Southeast Asia.",
+        "Shopee is among the top e-commerce platforms by traffic in Singapore."
+      ]
+    },
+    {
+      "type": "end-card",
+      "label": "Ready when you are",
+      "line": "Plan your Shopee Live campaign",
+      "cta": "Plan your Shopee Live campaign"
+    }
+  ],
+  "voiceover": "Turn your Shopee Live channel into a consistent sales engine. Confetti runs the full operation behind your Shopee Live shows, from scripting and hosting to studio production and sales conversion. Full production, nothing left to you. Official Shopee MCN platform access. Brief and campaign strategy. Script and run sheet development. Plan your Shopee Live campaign.",
+  "captions": "Turn your Shopee Live channel into a consistent sales engine. Confetti runs the full operation behind your Shopee Live shows, from scripting and hosting to studio production and sales conversion. Full production, nothing left to you. Official Shopee MCN platform access. Brief and campaign strategy. Script and run sheet development. Plan your Shopee Live campaign.",
+  "claims": []
+}

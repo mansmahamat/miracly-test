@@ -1,0 +1,12 @@
+{
+  "name": "Tonar",
+  "domain": "tonar.ai",
+  "sourceUrl": "https://tonar.ai",
+  "capturedAt": "2026-10-24",
+  "logo": { "type": "image", "path": "assets/logos/tonar.svg", "renderFile": "tonar.svg", "sourceUrl": "https://tonar.ai/", "alt": "Tonar logo" },
+  "colors": { "background": "#081C2B", "text": "#F5F8FB", "accent": "#73E4C3", "button": "#73E4C3", "buttonText": "#081C2B", "surface": "#12334A" },
+  "font": { "family": "Manrope", "source": "Google Fonts", "license": "OFL" },
+  "radius": 22,
+  "corrections": [],
+  "decisions": ["Official header logo captured from tonar.ai and stored locally as its source SVG without recolouring."]
+}

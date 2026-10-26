@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "sceneLibrary": [
+    "kinetic-headline",
+    "checklist",
+    "numbered-steps",
+    "phone-mockup",
+    "ticker",
+    "big-statement",
+    "end-card"
+  ],
+  "scenes": [
+    {
+      "type": "kinetic-headline",
+      "label": "Influencer marketing",
+      "line": "Find the right Singapore creators for y…",
+      "accentWord": "campaign"
+    },
+    {
+      "type": "big-statement",
+      "label": "Singapore",
+      "line": "Connect your brand with Singapore creat…"
+    },
+    {
+      "type": "checklist",
+      "label": "Built around outcomes",
+      "line": "Creator network already in Singapore",
+      "items": [
+        "Creator network already in Singapore",
+        "Official TikTok Shop and Shopee access"
+      ]
+    },
+    {
+      "type": "numbered-steps",
+      "label": "How it works",
+      "line": "A clear path from brief to outcome",
+      "items": [
+        "Brief us on your brand and goals",
+        "We identify and vet the right creators"
+      ]
+    },
+    {
+      "type": "ticker",
+      "label": "Built with experience",
+      "line": "Signals worth tracking",
+      "items": [
+        "Singapore is one of Southeast Asia's most active social commerce markets.",
+        "Singapore consumers are highly digitally active."
+      ]
+    },
+    {
+      "type": "end-card",
+      "label": "Ready when you are",
+      "line": "Talk to our team",
+      "cta": "Talk to our team"
+    }
+  ],
+  "voiceover": "Find the right Singapore creators for your next campaign. Connect your brand with Singapore creators who drive real purchases on TikTok Shop and Shopee. Creator network already in Singapore. Official TikTok Shop and Shopee access. Brief us on your brand and goals. We identify and vet the right creators. Talk to our team.",
+  "captions": "Find the right Singapore creators for your next campaign. Connect your brand with Singapore creators who drive real purchases on TikTok Shop and Shopee. Creator network already in Singapore. Official TikTok Shop and Shopee access. Brief us on your brand and goals. We identify and vet the right creators. Talk to our team.",
+  "claims": []
+}

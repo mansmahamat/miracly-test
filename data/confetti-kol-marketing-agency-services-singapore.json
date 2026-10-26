@@ -1,0 +1,11 @@
+{
+  "customer": "confetti", "market": "sg", "brand": { "name": "Confetti", "website": "https://www.confettisg.com" },
+  "page": { "service": "KOL marketing", "area": "Singapore", "url": "https://pages.confettisg.com/kol-marketing-agency-services/singapore" },
+  "headline": "Find the KOLs who actually move your product",
+  "summary": "Confetti connects Singapore brands with the right Key Opinion Leaders to drive real conversions on TikTok Shop, Shopee, and Lazada.",
+  "facts": ["Confetti operates as an official TikTok Shop Partner and Shopee MCN agency based in Singapore.", "Confetti serves both local Singapore brands and overseas brands entering the Singapore market."],
+  "benefits": ["Official platform partnerships, not guesswork", "Conversion-first creator selection", "Full campaign management, end to end", "Sales-linked reporting you can defend"],
+  "steps": ["Define your campaign goal and platform", "Select KOLs by conversion fit, not just reach", "Brief and activate creators", "Publish and monitor in real time", "Report on sales outcomes, not just reach"],
+  "clients": ["Owala", "Nippon Paint", "Bata", "EHP Labs", "Pelago by Singapore Airlines", "Bybit"],
+  "cta": { "label": "Talk to a KOL strategist", "url": "https://www.confettisg.com/contact-us" }, "lastChecked": "2026-10-22"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Confetti",
+  "domain": "confettisg.com",
+  "sourceUrl": "https://www.confettisg.com",
+  "capturedAt": "2026-10-24",
+  "logo": { "type": "image", "path": "assets/logos/confetti.png", "renderFile": "confetti.png", "sourceUrl": "https://www.confettisg.com/", "alt": "Confetti logo" },
+  "colors": { "background": "#FFF9F3", "text": "#1F1A17", "accent": "#F15A3A", "button": "#1F1A17", "buttonText": "#FFFFFF", "surface": "#F6E7D9" },
+  "font": { "family": "DM Sans", "source": "Google Fonts", "license": "OFL" },
+  "radius": 28,
+  "corrections": [],
+  "decisions": ["Official header logo captured from confettisg.com and stored locally without recolouring or enlargement."]
+}

@@ -1,0 +1,9 @@
+node_modules
+.venv
+output
+public
+jobs
+reviews
+.git
+.DS_Store
+npm-debug.log

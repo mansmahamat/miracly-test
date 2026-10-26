@@ -1,0 +1,9 @@
+{
+  "customer": "tonar", "market": "se", "brand": { "name": "Tonar", "website": "https://tonar.ai" },
+  "page": { "service": "Brand mention tracking", "area": "Nordics", "url": "https://tonar.ai/content/brand-mention-tracking" },
+  "headline": "See every brand mention the moment it airs",
+  "summary": "Every podcast, radio broadcast, and streaming clip monitored in real time, so your team catches every mention without manual listening.",
+  "facts": ["Proprietary Nordic-language AI models achieve a claimed word error rate of 3%.", "Sentiment analysis operates at the entity level.", "Competitor tracking is built in.", "Coverage spans podcasts, radio, streaming platforms, and social audio and video clips across Sweden, Finland, and Norway."],
+  "benefits": ["No mention goes undetected", "Faster response to negative coverage", "Competitive share-of-voice benchmarking", "Hours saved versus manual listening"],
+  "cta": { "label": "Request a demo", "url": "https://calendly.com/teamtonar/30min" }, "lastChecked": "2026-10-22"
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "sceneLibrary": [
+    "kinetic-headline",
+    "checklist",
+    "numbered-steps",
+    "phone-mockup",
+    "ticker",
+    "big-statement",
+    "end-card"
+  ],
+  "scenes": [
+    {
+      "type": "kinetic-headline",
+      "label": "TikTok Shop commerce campaigns",
+      "line": "Drive direct sales through TikTok Shop…",
+      "accentWord": "campaigns"
+    },
+    {
+      "type": "big-statement",
+      "label": "Singapore",
+      "line": "Confetti manages the full campaign life…"
+    },
+    {
+      "type": "checklist",
+      "label": "Built around outcomes",
+      "line": "Official TikTok Shop Partner access",
+      "items": [
+        "Official TikTok Shop Partner access",
+        "Full campaign lifecycle management"
+      ]
+    },
+    {
+      "type": "numbered-steps",
+      "label": "How it works",
+      "line": "A clear path from brief to outcome",
+      "items": [
+        "Brief the campaign and set sales targets",
+        "Source and match creators to your category"
+      ]
+    },
+    {
+      "type": "ticker",
+      "label": "Built with experience",
+      "line": "Signals worth tracking",
+      "items": [
+        "Singapore is one of Southeast Asia's most active TikTok Shop markets.",
+        "Singapore's social commerce environment includes local and overseas brands competing for consumers."
+      ]
+    },
+    {
+      "type": "end-card",
+      "label": "Ready when you are",
+      "line": "Book a TikTok Shop consultation",
+      "cta": "Book a TikTok Shop consultation"
+    }
+  ],
+  "voiceover": "Drive direct sales through TikTok Shop commerce campaigns. Confetti manages the full campaign lifecycle on TikTok Shop, from creator sourcing to live show production to performance tracking. Official TikTok Shop Partner access. Full campaign lifecycle management. Brief the campaign and set sales targets. Source and match creators to your category. Book a TikTok Shop consultation.",
+  "captions": "Drive direct sales through TikTok Shop commerce campaigns. Confetti manages the full campaign lifecycle on TikTok Shop, from creator sourcing to live show production to performance tracking. Official TikTok Shop Partner access. Full campaign lifecycle management. Brief the campaign and set sales targets. Source and match creators to your category. Book a TikTok Shop consultation.",
+  "claims": []
+}

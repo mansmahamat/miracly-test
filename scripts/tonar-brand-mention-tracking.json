@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "sceneLibrary": [
+    "kinetic-headline",
+    "checklist",
+    "numbered-steps",
+    "phone-mockup",
+    "ticker",
+    "big-statement",
+    "end-card"
+  ],
+  "scenes": [
+    {
+      "type": "kinetic-headline",
+      "label": "Brand mention tracking",
+      "line": "See every brand mention the moment it airs",
+      "accentWord": "airs"
+    },
+    {
+      "type": "big-statement",
+      "label": "Nordics",
+      "line": "Every podcast, radio broadcast, and str…"
+    },
+    {
+      "type": "checklist",
+      "label": "Built around outcomes",
+      "line": "No mention goes undetected",
+      "items": [
+        "No mention goes undetected",
+        "Faster response to negative coverage"
+      ]
+    },
+    {
+      "type": "phone-mockup",
+      "label": "Built for your team",
+      "line": "Every podcast, radio broadcast, and str…"
+    },
+    {
+      "type": "ticker",
+      "label": "Built with experience",
+      "line": "Signals worth tracking",
+      "items": [
+        "Proprietary Nordic-language AI models achieve a claimed word error rate of 3%.",
+        "Sentiment analysis operates at the entity level.",
+        "Competitor tracking is built in."
+      ]
+    },
+    {
+      "type": "end-card",
+      "label": "Ready when you are",
+      "line": "Request a demo",
+      "cta": "Request a demo"
+    }
+  ],
+  "voiceover": "See every brand mention the moment it airs. Every podcast, radio broadcast, and streaming clip monitored in real time, so your team catches every mention without manual listening. No mention goes undetected. Faster response to negative coverage. . Request a demo.",
+  "captions": "See every brand mention the moment it airs. Every podcast, radio broadcast, and streaming clip monitored in real time, so your team catches every mention without manual listening. No mention goes undetected. Faster response to negative coverage. . Request a demo.",
+  "claims": []
+}
