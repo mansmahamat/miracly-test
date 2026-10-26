@@ -1,11 +1,11 @@
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { join, resolve } from 'node:path';
 import { createLocalVoice, muxVoice } from './lib/audio.js';
 import { renderPage } from './lib/render.js';
-import { jobStore } from './lib/job-store.js';
 
 const root = resolve('.');
-const jobs = jobStore(root);
+const jobsDir = join(root, 'jobs');
 const slugFor = page => `${page.customer}-${page.page.service.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 
 function run(command, args) {
@@ -31,9 +31,13 @@ async function renderJob(job) {
 }
 
 async function tick() {
-  for (;;) {
-    const job = await jobs.claim();
-    if (!job) break;
+  for (const file of await readdir(jobsDir).catch(() => [])) {
+    if (!file.endsWith('.json')) continue;
+    const path = join(jobsDir, file);
+    const job = JSON.parse(await readFile(path, 'utf8'));
+    if (job.status !== 'queued') continue;
+    job.status = 'rendering';
+    await writeFile(path, JSON.stringify(job, null, 2));
     try {
       job.result = await renderJob(job);
       job.status = job.result.status === 'draft' ? 'review' : 'needs-human';
@@ -41,7 +45,7 @@ async function tick() {
       job.status = 'needs-human';
       job.result = { status: 'needs-human', errors: [error.message] };
     }
-    await jobs.save(job);
+    await writeFile(path, JSON.stringify(job, null, 2));
     console.log(`${job.id}: ${job.status}`);
   }
 }
